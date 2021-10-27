@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f55494bf1f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+    <script type="text/javascript">
+      var egg = new Egg();
+      egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+        jQuery('#egggif').fadeIn(500, function() {
+          window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+        });
+      }, "konami-code");
+      egg.addHook(function(){
+        console.log("Hook called for: " + this.activeEgg.keys);
+        console.log(this.activeEgg.metadata);
+      });
+      egg.listen();
+    </script>
+    <title>Louie Glutton</title>
+
+    <link rel = "icon" href = 
+    "/images/LG-Logo_LG_Black.svg">
+    
+</head>
+
+<body>
+  <style type="text/css">
+    #egggif {position: absolute; top: 12%; left: 28%; display: none; }
+  </style>
+<img id="egggif" src="https://assets.vogue.com/photos/58911f7bb482c0ea0e4d61d4/master/w_1600,c_limit/zoolander-beauty-rules-blue-steel.gif"/>
+  <div id="pageContainer">
+  <div id="content-wrap">  
+    <div class="nav">
+      <!-- LG Logo -->
+      <div class="logo"><a href="#"><img src="/images/LG-Logo_LG_White.svg" alt="LG Logo"></a>
+      </div>
+      <!-- Navigation -->
+        <ul>
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+            <li><a href="about.html" target="_blank">ABOUT</a></li>
+        </ul>
+        <!-- Search Bar -->
+  <div class="search-container">
+    <form action="/action_page.php">
+      <button type="submit"><i class="fas fa-search"></i></i></button>
+    </form>
+  </div>
+</div>
+
+<section>
+    <!-- Hero image -->
+    <div class="heroLouie">
+        <div class="heroText">
+          <h2>fall collection</h2>
+        </div>
+        </div>
+</section>
+
+<section>
+<!-- Blank space -->
+<div class="blankSpace"> <h3>COLLECTION</h3>
+</div> 
+
+</section>
+
+<section>
+    <!-- Products -->
+    <div class="products">
+      <a href=#>
+        <div class="leftAlign">
+          <img src="/images/cathat.jpg" alt="Cat in Hat">
+          <h4>HATS</h4>
+        </div>  
+      </a>
+          <a href=#>
+            <img src="/images/catjacket.png" alt="Cat in Jacket">
+              <h4>JACKETS</h4>
+      </a>
+         
+      <a href=#>
+          <img src="/images/catcollar.jpg" alt="Cat in Collar">
+              <h4>COLLARS</h4>
+      </a>
+
+      <a href=#>
+          <img src="/images/cataccessory.png" alt="Cat in accessories">
+                <h4>ACCESSORIES</h4>
+      </a>
+</div>
+</section>
+
+<!-- Runway section -->
+<div class="blankSpace2"> <h3>SEPTEMBER 2021 RUNWAY</h3>
+</div>   
+
+<section> 
+  <div class="catRunway">
+<img src="https://laughingsquid.com/wp-content/uploads/2018/10/Cat-Walking-Down-the-Catwalk-in-Istanbul.gif?w=288" alt="Cat Runway">
+</div>
+</section>
+</div>
+
+
+<footer id="footer">
+  <p>&copy; Louie Glutton. All rights reserved.</p> 
+  <div class="socialMedia">
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-square"></i></a>
+  <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  </div>
+</footer>
+</div>
+
+</body>
+
+<!-- Fix Footer/Center it || Apply icon to every page along with footer -->
